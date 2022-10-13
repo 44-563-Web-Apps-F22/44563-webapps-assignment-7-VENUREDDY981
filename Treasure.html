@@ -25,6 +25,9 @@
         <div class="p-2 bg-primary flex-fill" id="score">Score is unknown.</div>
         <div class="p-2 bg-danger flex-fill" id="help">Help report</div>
     </div>
+    <div>
+        <button class="btn btn-primary" type="submit" onclick="resetGame()">New Game</button>
+    </div>
 </div>
 
 <!-- Part 3: The goal is to have a 5 by 5 display of images.-->
@@ -189,7 +192,7 @@
       document.getElementById("help").innerHTML = "Help report"
       for(let i = 0; i < 24; i++) {
           if(i != 12) {
-              document.getElementById(ids[i]).src = "Treasure Chest.jpg"
+              document.getElementById(ids[i]).src = "Treasure box.jpg"
           }
       }
   }
